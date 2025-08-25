@@ -1,0 +1,20 @@
+{
+  "name": "taskhive",
+  "version": "1.0.0",
+  "description": "TaskHive - AI-Powered Task Management System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && node mock-server.js\" \"cd frontend && npm start\"",
+    "start": "npm run dev",
+    "backend": "cd backend && node mock-server.js",
+    "frontend": "cd frontend && npm start",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["taskhive", "ai", "agents", "react", "nodejs"],
+  "author": "TaskHive Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
